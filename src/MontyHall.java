@@ -51,26 +51,14 @@ public class MontyHall
 				
 				if(answerDos.equals("yes"))
 				{
-					
+					System.out.println("\nThe car was behind Door #1!");
+					System.out.println("You lost!");
 				}
-			}
-			System.out.println("There is a goat behind Door #2");
-			System.out.print("Would you like to change your pick? ");
-			String answerOne = user.nextLine();
-			
-			if(answerOne.equals("yes"))
-			{
-				System.out.println("\nThe car was behind Door #1!");
-				System.out.println("You lost!");
-			}
-			else if(answerOne.equals("no"))
-			{
-				System.out.println("\nThe car was behind Door #1!");
-				System.out.println("You won!");
-			}
-			else
-			{
-				System.out.println("\nYour response is invalid");
+				else if(answerDos.equals("no"))
+				{
+					System.out.println("\nThe car was behind Door #1!");
+					System.out.println("You won!");
+				}
 			}
 		}
 		else if(hidDoor==2 && doorOne==2)
