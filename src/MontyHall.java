@@ -59,44 +59,104 @@ public class MontyHall
 					System.out.println("\nThe car was behind Door #1!");
 					System.out.println("You won!");
 				}
+				else
+				{
+					System.out.println("\nYour response is invalid");
+				}
 			}
 		}
 		else if(hidDoor==2 && doorOne==2)
 		{
-			System.out.println("There is a goat behind Door #3");
-			System.out.print("Would you like to change your pick? ");
-			String answerTwo = user.nextLine();
+			int goatTwo = rand.nextInt(2);
 			
-			if(answerTwo.equals("yes"))
+			if(goatTwo==0)
 			{
-				System.out.println("\nThe car was behind Door #2!");
-				System.out.println("You lost!");
-			}
-			else if(answerTwo.equals("no"))
-			{
-				System.out.println("\nThe car was behind Door #2!");
-				System.out.println("You won!");
+				System.out.println("There is a goat behind Door #3");
+				System.out.print("Would you like to change your pick?");
+				String answerTres = user.nextLine();
+				
+				if(answerTres.equals("yes"))
+				{
+					System.out.println("\nThe car was behind Door #2!");
+					System.out.println("You lost!");
+				}
+				else if(answerTres.equals("no"))
+				{
+					System.out.println("\nThe car was behind Door #2!");
+					System.out.println("You won!");
+				}
+				else
+				{
+					System.out.println("\nYour response is invalid");
+				}
 			}
 			else
 			{
-				System.out.println("\nYour response is invalid");
+				System.out.println("There is a goat behind Door #1");
+				System.out.print("Would you like to change your pick?");
+				String answerCuatro = user.nextLine();
+				
+				if(answerCuatro.equals("yes"))
+				{
+					System.out.println("\nThe car was behind Door #2!");
+					System.out.println("You lost!");
+				}
+				else if(answerCuatro.equals("no"))
+				{
+					System.out.println("\nThe car was behind Door #2!");
+					System.out.println("You won!");
+				}
+				else
+				{
+					System.out.println("\nYour response is invalid");
+				}
 			}
 		}
 		else if(hidDoor==3 && doorOne==3)
 		{
-			System.out.println("There is a goat behind Door #1");
-			System.out.print("Would you like to change your pick? ");
-			String answerThree = user.nextLine();
+			int goatThree = rand.nextInt(2);
 			
-			if(answerThree.equals("yes"))
+			if(goatThree==0)
 			{
-				System.out.println("\nThe car was behind Door #3!");
-				System.out.println("You lost!");
+				System.out.println("There is a goat behind Door #1");
+				System.out.print("Would you like to change your pick?");
+				String answerCinco = user.nextLine();
+				
+				if(answerCinco.equals("yes"))
+				{
+					System.out.println("\nThe car was behind Door #3!");
+					System.out.println("You lost!");
+				}
+				else if(answerCinco.equals("no"))
+				{
+					System.out.println("\nThe car was behind Door #3!");
+					System.out.println("You won!");
+				}
+				else
+				{
+					System.out.println("\nYour response is invalid");
+				}
 			}
-			else if(answerThree.equals("no"))
+			else
 			{
-				System.out.println("\nThe car was behind Door #3!");
-				System.out.println("You won!");
+				System.out.println("There is a goat behind Door #2");
+				System.out.print("Would you like to change your pick?");
+				String answerSeis = user.nextLine();
+				
+				if(answerSeis.equals("yes"))
+				{
+					System.out.println("\nThe car was behind Door #3!");
+					System.out.println("You lost!");
+				}
+				else if(answerSeis.equals("no"))
+				{
+					System.out.println("\nThe car was behind Door #3!");
+					System.out.println("You won!");
+				}
+				else
+				{
+					System.out.println("\nYour response is invalid");
+				}
 			}
 		}
 		else if(hidDoor!=doorOne)
